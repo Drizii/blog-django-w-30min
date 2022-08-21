@@ -1,0 +1,39 @@
+{% load bootstrap3 %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mój nowy blog</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <a class="navbar-brand" href="/">Mój nowy blog</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col-sm-9">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="col-sm-3">
+                <p><img width="500px" src="https://scontent-frx5-2.xx.fbcdn.net/v/t1.6435-9/34851453_1976986862332469_8823916009330049024_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=TMTfaL3qj_IAX_8CoFV&_nc_ht=scontent-frx5-2.xx&oh=00_AT_ZWBgt5jnq86gc6lNpu0RaPvduakbMbx7Qh-W-rC1h-w&oe=6320F0F1" /></p>
+                <p><img width="500px" src="https://scontent-frx5-2.xx.fbcdn.net/v/t1.6435-9/58994532_2668563079882228_2877963864568233984_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=kgUkwHcyTeQAX-islL5&_nc_ht=scontent-frx5-2.xx&oh=00_AT_uhv2N8vV6yJarl7I_VswSXGJWCfoEWrGuequi3rHNOw&oe=63220A17" /></p>
+            </div>
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        informacje coppyright
+    </footer>
+</body>
+</html>
